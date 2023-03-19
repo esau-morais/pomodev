@@ -66,10 +66,20 @@ const main = async () => {
     options: durations,
   })) as number
 
+  if (prompts.isCancel(focusDuration)) {
+    prompts.cancel('Operation cancelled.')
+    process.exit(0)
+  }
+
   const breakDuration = (await prompts.select({
     message: 'Select break duration:',
     options: durations,
   })) as number
+
+  if (prompts.isCancel(breakDuration)) {
+    prompts.cancel('Operation cancelled.')
+    process.exit(0)
+  }
 
   const rounds = await prompts.text({
     message: 'How many rounds do you want to do?',
@@ -78,9 +88,14 @@ const main = async () => {
       !value
         ? 'Value is required'
         : isNaN(parseInt(value)) || parseInt(value) <= 0
-          ? 'Value must be a positive number'
-          : undefined,
+        ? 'Value must be a positive number'
+        : undefined,
   })
+
+  if (prompts.isCancel(rounds)) {
+    prompts.cancel('Operation cancelled.')
+    process.exit(0)
+  }
 
   console.clear()
 
