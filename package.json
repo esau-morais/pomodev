@@ -1,0 +1,43 @@
+{
+  "name": "pomodev",
+  "version": "0.0.3",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --watch dist/src/index.js"
+  },
+  "bin": {
+    "pomodev": "dist/src/index.js"
+  },
+  "author": "Esaú Morais <me@emots.dev> (https://emots.dev)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/esau-morais/pomo-cli.git",
+    "directory": "."
+  },
+  "dependencies": {
+    "@clack/core": "^0.3.2",
+    "@clack/prompts": "^0.6.3",
+    "moment": "^2.29.4"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.3",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
+    "eslint": "^8.36.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prefer-arrow": "^1.2.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.4",
+    "typescript": "^5.0.2"
+  },
+  "bugs": {
+    "url": "https://github.com/esau-morais/pomo-cli/issues"
+  },
+  "homepage": "https://github.com/esau-morais/pomo-cli#readme",
+  "description": "⏳Pomodoro for terminal-only users",
+  "keywords": [
+    "pomodoro"
+  ]
+}
