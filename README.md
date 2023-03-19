@@ -2,6 +2,8 @@
 
 ⏳ Cool and simple Pomodoro CLI for terminal-only users
 
+![pomodev demo](./pomodev.png)
+
 ## Get started 
 
 * Install the package globally
