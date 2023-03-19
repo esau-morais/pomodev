@@ -1,6 +1,6 @@
 {
   "name": "pomodev",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "scripts": {
     "build": "tsc",
     "start": "node --watch dist/src/index.js"
@@ -12,13 +12,15 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/esau-morais/pomo-cli.git",
+    "url": "git+https://github.com/esau-morais/pomodev.git",
     "directory": "."
+  },
+  "publishConfig": {
+    "@esau-morais:registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
     "@clack/core": "^0.3.2",
-    "@clack/prompts": "^0.6.3",
-    "moment": "^2.29.4"
+    "@clack/prompts": "^0.6.3"
   },
   "devDependencies": {
     "@types/node": "^18.15.3",
@@ -33,9 +35,9 @@
     "typescript": "^5.0.2"
   },
   "bugs": {
-    "url": "https://github.com/esau-morais/pomo-cli/issues"
+    "url": "https://github.com/esau-morais/pomodev/issues"
   },
-  "homepage": "https://github.com/esau-morais/pomo-cli#readme",
+  "homepage": "https://github.com/esau-morais/pomodev#readme",
   "description": "⏳Pomodoro for terminal-only users",
   "keywords": [
     "pomodoro"
