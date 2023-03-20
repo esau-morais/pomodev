@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import prompts from '@clack/prompts'
 import { sleep } from './utils/sleep'
 import type { Duration, Period } from './lib/types'
@@ -88,8 +89,8 @@ const main = async () => {
       !value
         ? 'Value is required'
         : isNaN(parseInt(value)) || parseInt(value) <= 0
-        ? 'Value must be a positive number'
-        : undefined,
+          ? 'Value must be a positive number'
+          : undefined,
   })
 
   if (prompts.isCancel(rounds)) {

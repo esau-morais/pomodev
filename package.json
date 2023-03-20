@@ -1,9 +1,9 @@
 {
   "name": "pomodev",
-  "version": "0.1.6",
+  "version": "0.1.8",
   "scripts": {
     "build": "tsc",
-    "start": "node --watch dist/src/index.js"
+    "start": "node dist/src/index.js"
   },
   "bin": {
     "pomodev": "dist/src/index.js"
